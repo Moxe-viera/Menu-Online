@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cardápio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let burger of burgers">
+      <ion-thumbnail slot="start">
+        <img [src]="burger.image">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ burger.name }}</h2>
+        <p>{{ burger.description }}</p>
+        <p><strong>Preço: {{ burger.price | currency:'BRL' }}</strong></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

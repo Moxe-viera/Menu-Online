@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+
+  img {
+    height: 100px;
+  }
+
+
+  .user-info {
+    display: flex;
+    align-items: center;
+
+    ion-label {
+      margin-right: 10px;
+    }
+  }
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  ion-input {
+    width: 50px;
+    text-align: center;
+  }
+
+  ion-button {
+    margin: 0 5px;
+  }
+}
+
+ion-footer {
+  ion-toolbar {
+    ion-segment {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      ion-segment-button {
+        ion-icon {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
